@@ -1,5 +1,7 @@
 import Counter from "../counter/counter";
 
+import "./App.sass"
+
 const App = () => {
 
     return (

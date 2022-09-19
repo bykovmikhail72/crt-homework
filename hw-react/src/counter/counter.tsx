@@ -3,6 +3,8 @@ import { RootState } from "../redux/store";
 
 import { increment, decrement } from "./counterSlice";
 
+import "./counter.sass"
+
 const Counter = () => {
     const dispatch = useDispatch();
 
@@ -11,13 +13,16 @@ const Counter = () => {
     return (
         <div className="counter">
             <div className="counter__table">{count}</div>
-            <button 
-                className="counter__increment"
-                onClick={() => dispatch(increment())}
-            >+</button>
-            <button 
-                className="counter__decriment"
-                onClick={() => {dispatch(decrement())}}>-</button>
+            <div className="counter__container">
+                <button 
+                    className="counter__btn"
+                    onClick={() => dispatch(increment())}
+                >+</button>
+                <button 
+                    className="counter__btn"
+                    onClick={() => {dispatch(decrement())}}
+                >-</button>
+            </div>
         </div>
     )
 }
