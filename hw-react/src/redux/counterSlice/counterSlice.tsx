@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { TCountType } from "../types/types";
+import { TCountType } from "../../types/types";
 
 const initialState: TCountType = {
     count: 0
